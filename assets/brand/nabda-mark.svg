@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="NABDA mark">
+  <title>NABDA — ECG mark (no backplate)</title>
+  <!--
+    Bare ECG mark for header bars / loading spinners.
+    Same waypoint data as nabda-logo.svg but with no circle backplate or shadow,
+    so it can sit on the white-bordered gradient header (e.g. dashboard hero).
+    Color: #407BFF (primary). Use currentColor in CSS to recolor.
+  -->
+  <defs>
+    <filter id="mark-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <g>
+    <path
+      d="M30 100 L51 100 L58 95.2 L65 100 L74 100 L80 91 L82 102 L88 159 L93 118 L98 81 L100 88 L103 100 L111 100 L121 109 L130 100 L170 100"
+      fill="none"
+      stroke="currentColor"
+      stroke-opacity="0.30"
+      stroke-width="12"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#mark-glow)"/>
+    <path
+      d="M30 100 L51 100 L58 95.2 L65 100 L74 100 L80 91 L82 102 L88 159 L93 118 L98 81 L100 88 L103 100 L111 100 L121 109 L130 100 L170 100"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>
+  </g>
+</svg>
