@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="NABDA logo (animated)">
+  <title>NABDA — ECG logo with self-running draw-in animation</title>
+  <!--
+    Drop-in replacement for the splash screen ECG draw-in animation.
+    Uses pure SMIL animateMotion-equivalent technique (stroke-dasharray + dashoffset).
+
+    The 'animate' on stroke-dashoffset reproduces the 1.8 s easeInOut loop the
+    Flutter `_ecgDrawAnimation` runs.
+  -->
+  <defs>
+    <filter id="anim-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="anim-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.20"/></feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#anim-shadow)">
+    <circle cx="100" cy="100" r="100" fill="#FFFFFF"/>
+  </g>
+
+  <clipPath id="anim-clip">
+    <circle cx="100" cy="100" r="100"/>
+  </clipPath>
+
+  <g clip-path="url(#anim-clip)">
+    <path id="ecg-glow"
+      d="M30.00 100.00 L51.00 100.00 L58.00 95.20 L65.00 100.00 L74.00 100.00 L80.17 91.05 L82.50 101.78 L88.33 159.38 L93.00 118.00 L98.83 80.93 L100.00 88.00 L103.50 100.00 L111.67 100.06 L121.00 109.00 L130.33 100.06 L170.00 100.00"
+      fill="none"
+      stroke="#407BFF"
+      stroke-opacity="0.3"
+      stroke-width="12"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      pathLength="100"
+      stroke-dasharray="100"
+      stroke-dashoffset="100"
+      filter="url(#anim-glow)">
+      <animate attributeName="stroke-dashoffset" from="100" to="0"
+               dur="1.8s" repeatCount="indefinite" calcMode="spline"
+               keySplines="0.42 0 0.58 1"/>
+    </path>
+    <path id="ecg-main"
+      d="M30.00 100.00 L51.00 100.00 L58.00 95.20 L65.00 100.00 L74.00 100.00 L80.17 91.05 L82.50 101.78 L88.33 159.38 L93.00 118.00 L98.83 80.93 L100.00 88.00 L103.50 100.00 L111.67 100.06 L121.00 109.00 L130.33 100.06 L170.00 100.00"
+      fill="none"
+      stroke="#407BFF"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      pathLength="100"
+      stroke-dasharray="100"
+      stroke-dashoffset="100">
+      <animate attributeName="stroke-dashoffset" from="100" to="0"
+               dur="1.8s" repeatCount="indefinite" calcMode="spline"
+               keySplines="0.42 0 0.58 1"/>
+    </path>
+  </g>
+</svg>
