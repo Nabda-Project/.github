@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/brand/app-logo.png" width="140" alt="NABDA logo"/>
+<img src="../assets/brand/app-logo.png" width="140" alt="NABDA logo"/>
 
 # NABDA — نبضة
 ### Intelligent Diagnostic Support & Follow-Up System
@@ -210,29 +210,29 @@ The Nabda wristband fuses PPG and ECG-derived signals through a custom Kalman fi
 <table align="center">
   <tr>
     <td align="center" width="33%">
-      <img src="assets/device/casing.png" width="260" alt="Nabda wearable casing render"/><br/>
+      <img src="../assets/device/casing.png" width="260" alt="Nabda wearable casing render"/><br/>
       <sub>Enclosure render</sub>
     </td>
     <td align="center" width="33%">
-      <img src="assets/device/prototype_top.png" width="260" alt="Nabda prototype top view"/><br/>
+      <img src="../assets/device/prototype_top.png" width="260" alt="Nabda prototype top view"/><br/>
       <sub>Prototype — top view</sub>
     </td>
     <td align="center" width="33%">
-      <img src="assets/device/prototype_bottom.png" width="260" alt="Nabda prototype bottom view"/><br/>
+      <img src="../assets/device/prototype_bottom.png" width="260" alt="Nabda prototype bottom view"/><br/>
       <sub>Prototype — bottom view</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="assets/device/pcb-3d.png" width="260" alt="PCB 3D render, front"/><br/>
+      <img src="../assets/device/pcb-3d.png" width="260" alt="PCB 3D render, front"/><br/>
       <sub>PCB 3D render — front</sub>
     </td>
     <td align="center">
-      <img src="assets/device/pcb-3d-back.png" width="260" alt="PCB 3D render, back"/><br/>
+      <img src="../assets/device/pcb-3d-back.png" width="260" alt="PCB 3D render, back"/><br/>
       <sub>PCB 3D render — back</sub>
     </td>
     <td align="center">
-      <img src="assets/device/schematic.png" width="260" alt="PPG schematic"/><br/>
+      <img src="../assets/device/schematic.png" width="260" alt="PPG schematic"/><br/>
       <sub>PPG schematic</sub>
     </td>
   </tr>
@@ -249,32 +249,32 @@ Graduation Project Team 2025/2026 — Faculty of Engineering, Electronics & Comm
 <table align="center">
   <tr>
     <td align="center" width="16.6%">
-      <img src="assets/team/malak.png" width="95" height="95" alt="Malak Essam Kamal"/><br/><br/>
+      <img src="../assets/team/malak.png" width="95" height="95" alt="Malak Essam Kamal"/><br/><br/>
       <b>Malak Essam Kamal</b><br/>
       <a href="https://www.linkedin.com/in/malak-essam04/">LinkedIn ↗</a>
     </td>
     <td align="center" width="16.6%">
-      <img src="assets/team/abdulshafi.png" width="95" height="95" alt="Mohammad Abdul-Shafi Seddiq"/><br/><br/>
+      <img src="../assets/team/abdulshafi.png" width="95" height="95" alt="Mohammad Abdul-Shafi Seddiq"/><br/><br/>
       <b>Mohammad Abdul-Shafi Seddiq</b><br/>
       <a href="https://www.linkedin.com/in/abdulshafi/">LinkedIn ↗</a>
     </td>
     <td align="center" width="16.6%">
-      <img src="assets/team/shahd.png" width="95" height="95" alt="Shahd Tamer Khamis"/><br/><br/>
+      <img src="../assets/team/shahd.png" width="95" height="95" alt="Shahd Tamer Khamis"/><br/><br/>
       <b>Shahd Tamer Khamis</b><br/>
       <a href="https://www.linkedin.com/in/shahd-tamer-1b5303244/">LinkedIn ↗</a>
     </td>
     <td align="center" width="16.6%">
-      <img src="assets/team/yehia.png" width="95" height="95" alt="Yehia Said Gewily"/><br/><br/>
+      <img src="../assets/team/yehia.png" width="95" height="95" alt="Yehia Said Gewily"/><br/><br/>
       <b>Yehia Said Gewily</b><br/>
       <a href="https://www.linkedin.com/in/yehia-gewily-7545231a6/">LinkedIn ↗</a>
     </td>
     <td align="center" width="16.6%">
-      <img src="assets/team/ziad-elsayed.png" width="95" height="95" alt="Ziad Mohammad Elsayed"/><br/><br/>
+      <img src="../assets/team/ziad-elsayed.png" width="95" height="95" alt="Ziad Mohammad Elsayed"/><br/><br/>
       <b>Ziad Mohammad Elsayed</b><br/>
       <a href="https://www.linkedin.com/in/ziadmohamedelsayed/">LinkedIn ↗</a>
     </td>
     <td align="center" width="16.6%">
-      <img src="assets/team/ziad-zaki.png" width="95" height="95" alt="Ziad Mostafa Zaki"/><br/><br/>
+      <img src="../assets/team/ziad-zaki.png" width="95" height="95" alt="Ziad Mostafa Zaki"/><br/><br/>
       <b>Ziad Mostafa Zaki</b><br/>
       <a href="https://www.linkedin.com/in/ziad-mostafa-zaki-354952244/">LinkedIn ↗</a>
     </td>
