@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="../assets/brand/app-logo.png" width="140" alt="NABDA logo"/>
+<img src="../assets/brand/nabda-logo-animated.svg" width="140" alt="NABDA logo"/>
 
 # NABDA — نبضة
 ### Intelligent Diagnostic Support & Follow-Up System
