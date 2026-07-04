@@ -274,7 +274,7 @@ Graduation Project Team 2025/2026 — Faculty of Engineering, Electronics & Comm
       <a href="https://www.linkedin.com/in/ziadmohamedelsayed/">LinkedIn ↗</a>
     </td>
     <td align="center" width="16.6%">
-      <img src="../assets/team/ziad-zaki.png" width="95" height="95" alt="Ziad Mostafa Zaki"/><br/><br/>
+      <img src="../assets/team/ziad-zaki.jpg" width="95" height="95" alt="Ziad Mostafa Zaki"/><br/><br/>
       <b>Ziad Mostafa Zaki</b><br/>
       <a href="https://www.linkedin.com/in/ziad-mostafa-zaki-354952244/">LinkedIn ↗</a>
     </td>
