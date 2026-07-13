@@ -30,10 +30,23 @@ NABDA closes that gap with four integrated pieces:
 
 This repository (`.github`) is the organization's profile — it doesn't contain code, it explains how the six repositories below fit together.
 
+## What to Review First
+
+If you are reviewing the project quickly, start here:
+
+| Area | Repository | What it shows |
+|---|---|---|
+| Mobile product | [**gp_app**](https://github.com/Nabda-Project/gp_app) | Patient and doctor workflows, wearable data intake, chat, reports, and mobile UX |
+| Backend system | [**Graduation-project-BE**](https://github.com/Nabda-Project/Graduation-project-BE) | Authentication, patient records, appointments, vitals ingestion, alerts, and real-time messaging |
+| Doctor workstation | [**gp-web-app**](https://github.com/Nabda-Project/gp-web-app) | Doctor dashboard, patient supervision, report review, and web-based follow-up |
+| AI intake/reporting | [**Chatbot**](https://github.com/Nabda-Project/Chatbot) + [**Report-model-api**](https://github.com/Nabda-Project/Report-model-api) | Arabic pre-consultation intake and structured clinical report generation |
+| Hardware | [**Nabda-Device**](https://github.com/Gp-team26/Nabda-Device) | Wearable firmware, PCB work, and signal-processing pipeline |
+
 ---
 
 ## Table of Contents
 
+- [What to Review First](#what-to-review-first)
 - [System Architecture](#system-architecture)
 - [How Data Flows](#how-data-flows)
   - [Pre-Consultation Chatbot Flow](#pre-consultation-chatbot-flow)
@@ -70,11 +83,11 @@ flowchart LR
     end
 
     subgraph Data["Data Layer"]
-        DB[("PostgreSQL<br/>Amazon RDS, Multi-AZ")]
+        DB[("PostgreSQL<br/>Patient records + vitals")]
     end
 
-    subgraph Cloud["Cloud Services"]
-        AI["Report-model-api<br/>Fine-tuned Qwen3 (Azure, France Central)"]
+    subgraph Services["Supporting Services"]
+        AI["Report-model-api<br/>Fine-tuned Qwen3"]
         FCM["Firebase Cloud Messaging"]
     end
 
@@ -98,9 +111,9 @@ flowchart LR
 
 **Spring Boot Backend** — the orchestrator: stateless JWT auth, vitals ingestion and threshold evaluation, multi-channel alert dispatch (in-app + FCM + WebSocket), appointment and medical-record lifecycle, and the bridge to the external AI service.
 
-**PostgreSQL (Amazon RDS)** — the single source of truth, accessed exclusively through Spring Data JPA/Hibernate.
+**PostgreSQL** — the single source of truth, accessed exclusively through Spring Data JPA/Hibernate.
 
-**Report-model-api & Firebase** — external services: a fine-tuned Qwen3-4B model that turns an Arabic narrative into a structured clinical report, and FCM for cross-platform push delivery.
+**Report-model-api & Firebase** — supporting services: a fine-tuned Qwen3-4B model that turns an Arabic narrative into a structured clinical report, and FCM for cross-platform push delivery.
 
 ---
 
@@ -162,7 +175,7 @@ sequenceDiagram
 | [**gp-web-app**](https://github.com/Nabda-Project/gp-web-app) | Doctor-only web portal | Next.js 15, React 19, TypeScript, Tailwind |
 | [**Graduation-project-BE**](https://github.com/Nabda-Project/Graduation-project-BE) | Central backend: auth, vitals, alerts, chat, records | Spring Boot 3.5, Java 21, PostgreSQL, JWT |
 | [**Chatbot**](https://github.com/Nabda-Project/Chatbot) | Arabic conversational pre-consultation intake | Python, Flask |
-| [**Report-model-api**](https://github.com/Nabda-Project/Report-model-api) | Fine-tuned LLM clinical report generation service | FastAPI, llama.cpp, Qwen3 (GGUF), Docker |
+| [**Report-model-api**](https://github.com/Nabda-Project/Report-model-api) | Fine-tuned LLM clinical report generation service | FastAPI, llama.cpp, Qwen3 (GGUF) |
 | [**Nabda-Device**](https://github.com/Gp-team26/Nabda-Device) | Wearable firmware, sensor fusion & PCB design | ESP8266 (Arduino), Altium Designer |
 
 ---
@@ -196,10 +209,10 @@ graph TD
 | **Mobile** | Flutter, Dart, Hive, Flutter Secure Storage, Foreground Service (UDP listener) |
 | **Web** | Next.js 15, React 19, TypeScript 5.8, Tailwind CSS, STOMP over SockJS |
 | **Backend** | Spring Boot 3.5, Java 21, Spring Security (JWT), WebSocket/STOMP, MapStruct |
-| **Database** | PostgreSQL 16 on Amazon RDS (Multi-AZ) |
+| **Database** | PostgreSQL 16 |
 | **AI / NLP** | Rule-based FSM chatbot, fine-tuned Qwen3-4B (GGUF via llama.cpp), JSON-schema-constrained generation |
 | **Hardware** | ESP8266EX, MAX30102 (PPG), ADS1292R (ECG), custom Kalman-filter sensor fusion, Altium-designed PCB |
-| **Cloud & DevOps** | AWS Elastic Beanstalk / EC2, Azure (France Central) inference, Firebase Cloud Messaging, GitHub Actions CI/CD, Docker |
+| **Integration & Tooling** | Firebase Cloud Messaging, GitHub Actions checks, containerized model serving |
 
 ---
 
@@ -243,8 +256,6 @@ The Nabda wristband fuses PPG and ECG-derived signals through a custom Kalman fi
 ## Team
 
 Graduation Project Team 2025/2026 — Faculty of Engineering, Electronics & Communications, Alexandria University. Six equal contributors — listed alphabetically by first name, no seniority or hierarchy implied by order or position.
-
-> Each card below has a photo slot. Drop a real headshot into `assets/team/<file>.png` (same filename, any size — it'll be cropped square) to replace the placeholder initials.
 
 <table align="center">
   <tr>
