@@ -3,6 +3,7 @@
 <img src="../assets/brand/nabda-logo-animated.svg" width="140" alt="NABDA logo"/>
 
 # NABDA — نبضة
+
 ### Intelligent Diagnostic Support & Follow-Up System
 
 *A cardiovascular care ecosystem: wearable biosensing, conversational AI intake, and real-time doctor–patient follow-up.*
@@ -255,7 +256,10 @@ The Nabda wristband fuses PPG and ECG-derived signals through a custom Kalman fi
 
 ## Team
 
-Graduation Project Team 2025/2026 — Faculty of Engineering, Electronics & Communications, Alexandria University. Six equal contributors — listed alphabetically by first name, no seniority or hierarchy implied by order or position.
+Graduation Project Team 2025/2026 — Faculty of Engineering, Electronics & Communications, Alexandria University. Six contributors — listed alphabetically by first name.
+<p align="center">
+  <img src="../assets/team/whole-team-photo.jpeg" width="800" alt="NABDA Team Photo"/>
+</p>
 
 <table align="center">
   <tr>
@@ -265,7 +269,7 @@ Graduation Project Team 2025/2026 — Faculty of Engineering, Electronics & Comm
       <a href="https://www.linkedin.com/in/malak-essam04/">LinkedIn ↗</a>
     </td>
     <td align="center" width="16.6%">
-      <img src="../assets/team/abdulshafi.png" width="95" height="95" alt="Mohammad Abdul-Shafi Seddiq"/><br/><br/>
+      <img src="../assets/team/abdulshafi.jpg" width="95" height="95" alt="Mohammad Abdul-Shafi Seddiq"/><br/><br/>
       <b>Mohammad Abdul-Shafi Seddiq</b><br/>
       <a href="https://www.linkedin.com/in/abdulshafi/">LinkedIn ↗</a>
     </td>
