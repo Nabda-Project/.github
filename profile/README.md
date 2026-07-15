@@ -284,7 +284,7 @@ Graduation Project Team 2025/2026 — Faculty of Engineering, Electronics & Comm
       <a href="https://www.linkedin.com/in/yehia-gewily-7545231a6/">LinkedIn ↗</a>
     </td>
     <td align="center" width="16.6%">
-      <img src="../assets/team/ziad-elsayed.png" width="95" height="95" alt="Ziad Mohammad Elsayed"/><br/><br/>
+      <img src="../assets/team/ziad-elsayed.jpeg" width="95" height="95" alt="Ziad Mohammad Elsayed"/><br/><br/>
       <b>Ziad Mohammad Elsayed</b><br/>
       <a href="https://www.linkedin.com/in/ziadmohamedelsayed/">LinkedIn ↗</a>
     </td>
