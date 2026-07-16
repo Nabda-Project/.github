@@ -264,7 +264,7 @@ Graduation Project Team 2025/2026 — Faculty of Engineering, Electronics & Comm
 <table align="center">
   <tr>
     <td align="center" width="16.6%">
-      <img src="../assets/team/malak.png" width="95" height="95" alt="Malak Essam Kamal"/><br/><br/>
+      <img src="../assets/team/malak.jpg" width="95" height="95" alt="Malak Essam Kamal"/><br/><br/>
       <b>Malak Essam Kamal</b><br/>
       <a href="https://www.linkedin.com/in/malak-essam04/">LinkedIn ↗</a>
     </td>
